@@ -28,9 +28,9 @@ const Singup = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    console.log()
     axios
-      .post(`${server}/user/create-user`, { name, email, password, avatar })
+      .post(`${server}/user/create-user`, { name, email, password })
       .then((res) => {
         toast.success(res.data.message);
         setName("");
@@ -39,6 +39,7 @@ const Singup = () => {
         setAvatar();
       })
       .catch((error) => {
+        console.log({error})
         toast.error(error.response.data.message);
       });
   };

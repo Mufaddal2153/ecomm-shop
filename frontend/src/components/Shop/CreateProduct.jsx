@@ -75,7 +75,7 @@ const CreateProduct = () => {
         discountPrice,
         stock,
         shopId: seller._id,
-        images,
+        // images,
       })
     );
   };

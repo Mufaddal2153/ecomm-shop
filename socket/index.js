@@ -33,11 +33,11 @@ const getUser = (receiverId) => {
 };
 
 // Define a message object with a seen property
-const createMessage = ({ senderId, receiverId, text, images }) => ({
+const createMessage = ({ senderId, receiverId, text }) => ({
   senderId,
   receiverId,
   text,
-  images,
+  // images,
   seen: false,
 });
 
