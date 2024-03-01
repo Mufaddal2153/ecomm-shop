@@ -39,6 +39,7 @@ import {
 } from "./routes/ShopRoutes";
 import {
   AdminDashboardPage,
+  AdminApproveSellers,
   AdminDashboardUsers,
   AdminDashboardSellers,
   AdminDashboardOrders,
@@ -265,6 +266,14 @@ const App = () => {
           element={
             <ProtectedAdminRoute>
               <AdminDashboardPage />
+            </ProtectedAdminRoute>
+          }
+        />
+        <Route
+          path="/admin/approve-sellers"
+          element={
+            <ProtectedAdminRoute>
+              <AdminApproveSellers />
             </ProtectedAdminRoute>
           }
         />
